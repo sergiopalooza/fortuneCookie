@@ -8,15 +8,8 @@ $(document).ready(function(){
     	type: 'GET',
     	url: 'http://fortunecookieapi.com/v1/fortunes?limit=1&skip=' + skip,
     	success: function(data){
-    		console.log("success", data);
-
-            for(var i=0; i<data.length; i++){
-                $messages.append('<p>' + data[i].message + '..in bed.' + '</p>');
-            }
-    		// $.each(data, function(i, message){  //each function in jquery goes loops through and array and does something.
-    		// 	$messages.append('<li>message: ' + data.message + '</li>');
-    		// });
-    		
+    		//console.log("success", data);
+            $messages.append('<p>' + data[0].message + '..in bed.' + '</p>');
     	}
     });
 });
