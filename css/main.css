@@ -3,5 +3,8 @@ body {
 }
 
 .quote {
-	font-family: "Permanent Marker"
+	font-family: "Permanent Marker";
+	/*font-family: "Times New Roman";*/
+	/*color: red;*/
+
 }
